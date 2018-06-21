@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LinksTest" parallel="methods" thread-count="3" verbose="7">
+    <test name="sanity">
+        <classes>
+            <class name="com.eric.testCases.FlightTest">
+                <methods>
+                    <include name="flightTest1">
+
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
