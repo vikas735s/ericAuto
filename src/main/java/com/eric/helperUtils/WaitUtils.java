@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 /**
  * Created by zmivukk on 6/20/2018.
  */
-public class HelperUtils {
+public class WaitUtils {
     private static WebDriver driver;
     private static WebDriverWait waitExplict;
     private static JavascriptExecutor jSE;
