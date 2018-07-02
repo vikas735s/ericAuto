@@ -1,11 +1,10 @@
-package com.eric.helperUtils;
+package com.eric.selApihelperUtils;
 
 import com.eric.driverManager.DriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 /**

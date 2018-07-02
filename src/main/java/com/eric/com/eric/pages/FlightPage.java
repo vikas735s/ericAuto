@@ -1,7 +1,7 @@
 package com.eric.com.eric.pages;
 
-import com.eric.helperUtils.ActionsUtils;
-import com.eric.helperUtils.WaitUtils;
+import com.eric.selApihelperUtils.ActionsUtils;
+import com.eric.selApihelperUtils.WaitUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,4 +1,4 @@
-package com.eric.helperUtils;
+package com.eric.selApihelperUtils;
 
 import com.eric.driverManager.DriverManager;
 import org.openqa.selenium.Alert;

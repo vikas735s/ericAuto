@@ -1,12 +1,9 @@
-package com.eric.helperUtils;
+package com.eric.selApihelperUtils;
 
 import com.eric.driverManager.DriverManager;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
-import java.security.Key;
 
 /**
  * Created by zmivukk on 6/25/2018.
