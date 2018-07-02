@@ -1,6 +1,7 @@
 package com.eric.com.eric.pages;
 
-import com.eric.helperUtils.HelperUtils;
+import com.eric.helperUtils.ActionsUtils;
+import com.eric.helperUtils.WaitUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,10 +35,11 @@ public class FlightPage extends BasePage {
 
     public void setFromCity( String city){
 
+
         fromCityTextBox.click();
         fromCityTextBox.clear();
         fromCityTextBox.sendKeys(city);
-        HelperUtils.waitForAjaxCallToFinish();
+        WaitUtils.waitForAjaxCallToFinish();
         fromCityOption.click();
     }
 
@@ -45,8 +47,12 @@ public class FlightPage extends BasePage {
         toCityTextBox.click();
         toCityTextBox.clear();
         toCityTextBox.sendKeys(city);
-        HelperUtils.waitForAjaxCallToFinish();
+        WaitUtils.waitForAjaxCallToFinish();
         toCityOption.click();
+    }
+
+    public void sendCap(String city){
+        ActionsUtils.keyDownAction(toCityTextBox, city);
     }
 
 }

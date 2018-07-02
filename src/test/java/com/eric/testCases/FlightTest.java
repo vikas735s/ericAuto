@@ -3,6 +3,7 @@ package com.eric.testCases;
 import com.eric.com.eric.pages.BasePage;
 import com.eric.com.eric.pages.FlightPage;
 import com.eric.com.eric.pages.HomePage;
+import com.eric.helperUtils.ActionsUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -20,9 +21,16 @@ public class FlightTest extends BaseTest {
 
     @Test
     public void flightTest1(){
-        flightPage.setFromCity("Pune");
+       // flightPage.setFromCity("Pune");
 
-        flightPage.setToCity("Indore");
+
+
+      //  flightPage.setToCity("Indore");
+
+
+        HomePage homePage = new HomePage();
+        flightPage.sendCap("Innnnnnnnnnnnnnn");
+        //ActionsUtils.clickAction(homePage.holidayTabLink);
 
     }
 

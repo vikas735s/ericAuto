@@ -5,6 +5,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by zmivukk on 6/20/2018.
  */
@@ -31,6 +34,10 @@ public class WaitUtils {
         if (waitExplict.until(ExpectedConditions.visibilityOf(webElement)) != null)
             return true;
         return false;
+    }
+
+    public static void implicitWait( WebDriver driver, long time ){
+        driver.manage().timeouts().implicitlyWait(TimeUnit.MILLISECONDS.convert(time, TimeUnit.MILLISECONDS) , TimeUnit.MILLISECONDS);
     }
 
     public static boolean waitForAjaxCallToFinish() {

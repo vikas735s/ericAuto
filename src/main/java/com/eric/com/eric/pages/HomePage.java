@@ -1,9 +1,7 @@
 package com.eric.com.eric.pages;
 
-import com.eric.driverManager.DriverManager;
-import com.eric.helperUtils.HelperUtils;
+import com.eric.helperUtils.WaitUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,6 +14,8 @@ public class HomePage extends BasePage{
     @FindBy(id = "header_tab_flights")
     private WebElement flightTabLink;
 
+    @FindBy(id="header_tab_holidays")
+    public WebElement holidayTabLink;
     public HomePage(){
         super(By.xpath(".//*[@class='mmt_header_logo']"));
         PageFactory.initElements(driver, this);
@@ -23,7 +23,13 @@ public class HomePage extends BasePage{
 
     public void clickFlightTabLink(){
         flightTabLink.click();
-        HelperUtils.waitForAjaxCallToFinish();
+        WaitUtils.waitForAjaxCallToFinish();
     }
+
+    public void clickHolidayTabLink(){
+        holidayTabLink.click();
+        WaitUtils.waitForAjaxCallToFinish();
+    }
+
 
 }
