@@ -1,4 +1,4 @@
-package com.eric.com.eric.pages;
+package com.eric.pages;
 
 import com.eric.selApihelperUtils.ActionsUtils;
 import com.eric.selApihelperUtils.WaitUtils;

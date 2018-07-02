@@ -1,7 +1,7 @@
 package com.eric.testCases;
 
-import com.eric.com.eric.pages.FlightPage;
-import com.eric.com.eric.pages.HomePage;
+import com.eric.pages.FlightPage;
+import com.eric.pages.HomePage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

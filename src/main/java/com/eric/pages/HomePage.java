@@ -1,4 +1,4 @@
-package com.eric.com.eric.pages;
+package com.eric.pages;
 
 import com.eric.selApihelperUtils.WaitUtils;
 import org.openqa.selenium.By;

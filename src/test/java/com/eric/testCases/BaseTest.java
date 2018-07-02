@@ -1,6 +1,6 @@
 package com.eric.testCases;
 
-import com.eric.com.eric.pages.HomePage;
+import com.eric.pages.HomePage;
 import com.eric.driverManager.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
